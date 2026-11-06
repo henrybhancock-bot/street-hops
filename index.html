@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Hoops</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">🏀</span> STREET HOOPS</div>
+      <div class="top-label">ARCADE BASKETBALL</div>
+    </header>
+
+    <section id="game-wrap">
+      <canvas id="game" width="1100" height="620"></canvas>
+
+      <div id="menu" class="overlay">
+        <div class="menu-card">
+          <div class="eyebrow">ONE COURT. ONE CHANCE.</div>
+          <h1>STREET<br><span>HOOPS</span></h1>
+          <p>Take on the challenger. Own the court.</p>
+          <button id="start-button">PLAY NOW <span>▶</span></button>
+          <div class="menu-small">1 VS 1 · ARCADE MODE</div>
+        </div>
+      </div>
+
+      <div id="game-over" class="overlay hidden">
+        <div class="menu-card">
+          <div class="eyebrow">FINAL BUZZER</div>
+          <h1 id="result-title">YOU WIN!</h1>
+          <p id="final-score">0 - 0</p>
+          <button id="rematch-button">PLAY AGAIN <span>↻</span></button>
+          <div class="menu-small">STREET HOOPS · ARCADE MODE</div>
+        </div>
+      </div>
+
+      <div id="pause-screen" class="overlay hidden">
+        <div class="menu-card pause-card">
+          <div class="eyebrow">TAKE A BREATHER</div>
+          <h1>PAUSED</h1>
+          <button id="resume-button">RESUME <span>▶</span></button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="controls">
+      <div><kbd>A</kbd><kbd>D</kbd> Move <kbd>W</kbd> Jump</div>
+      <div><kbd>X</kbd> Shoot / Steal <kbd>S</kbd> Block</div>
+      <div><kbd>Z</kbd> SuperShot <kbd>SHIFT</kbd> Dash</div>
+      <div><kbd>ESC</kbd> Pause</div>
+    </footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
